@@ -2497,6 +2497,68 @@
         "pinCode": "431203"
       },
       "id": 1
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 3,
+          "id": 9
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "email": "Girish@gmail.com",
+        "password": "Pass@123",
+        "addresses": [
+          {
+            "name": "Girish",
+            "email": "Girish@gmail.com",
+            "phone": "1234567899",
+            "street": "shivnagar ambad road old jalna",
+            "city": "jalna",
+            "state": "maharashtra",
+            "pinCode": "431203"
+          },
+          {
+            "name": "Girish Muley",
+            "email": "Girish@gmail.com",
+            "phone": "1234567899",
+            "street": "shivnagar ambad road old jalna",
+            "city": "jalna",
+            "state": "maharashtra",
+            "pinCode": "431203"
+          }
+        ],
+        "id": 3
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Girish Muley",
+        "email": "Girish@gmail.com",
+        "phone": "1234567899",
+        "street": "shivnagar ambad road old jalna",
+        "city": "jalna",
+        "state": "maharashtra",
+        "pinCode": "431203"
+      },
+      "id": 2
     }
   ]
 }

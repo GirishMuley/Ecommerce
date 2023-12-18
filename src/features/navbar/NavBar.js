@@ -21,8 +21,8 @@ const navigation = [
   { name: "Team", href: "#", current: false },
 ];
 const userNavigation = [
-  { name: "Your Profile", link: "/" },
-  { name: "Settings", link: "/" },
+  { name: "Your Profile", link: "/profile" },
+  { name: "My Orders", link: "/orders" },
   { name: "Sign out", link: "/login" },
 ];
 
@@ -214,10 +214,9 @@ function NavBar({ children }) {
                       <Disclosure.Button
                         key={item.name}
                         as="a"
-                        href={item.href}
                         className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
                       >
-                        {item.name}
+                        <Link to={item.link}>{item.name}</Link>
                       </Disclosure.Button>
                     ))}
                   </div>

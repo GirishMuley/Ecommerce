@@ -2340,13 +2340,22 @@
       "password": "Pass@123",
       "addresses": [
         {
-          "name": "Jack sparrow",
+          "name": "Jack sparrow Captain",
           "email": "Jack@gmail.com",
           "phone": "9876541233",
           "street": "13th main",
           "city": "london",
           "state": "london",
           "pinCode": "431545"
+        },
+        {
+          "name": "Jack sparrow",
+          "email": "Jack@gmail.com",
+          "phone": "9876541233",
+          "street": "12th cross",
+          "city": "london",
+          "state": "united",
+          "pinCode": "7812453"
         }
       ],
       "id": 1
@@ -2405,20 +2414,21 @@
       "id": 7
     },
     {
-      "title": "Samsung Galaxy Book",
-      "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+      "title": "Microsoft Surface Laptop 4",
+      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
       "price": 1499,
-      "discountPercentage": 4.15,
-      "rating": 4.25,
-      "stock": 50,
-      "brand": "Samsung",
+      "discountPercentage": 10.23,
+      "rating": 4.43,
+      "stock": 68,
+      "brand": "Microsoft Surface",
       "category": "laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+      "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/7/1.jpg",
-        "https://i.dummyjson.com/data/products/7/2.jpg",
-        "https://i.dummyjson.com/data/products/7/3.jpg",
-        "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+        "https://i.dummyjson.com/data/products/8/1.jpg",
+        "https://i.dummyjson.com/data/products/8/2.jpg",
+        "https://i.dummyjson.com/data/products/8/3.jpg",
+        "https://i.dummyjson.com/data/products/8/4.jpg",
+        "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
       ],
       "quantity": 1,
       "user": 1,
@@ -2882,6 +2892,61 @@
       },
       "status": "pending",
       "id": 7
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 8
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "Jack@gmail.com",
+        "password": "Pass@123",
+        "addresses": [
+          {
+            "name": "Jack sparrow",
+            "email": "Jack@gmail.com",
+            "phone": "9876541233",
+            "street": "13th main",
+            "city": "london",
+            "state": "london",
+            "pinCode": "431545"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Jack sparrow",
+        "email": "Jack@gmail.com",
+        "phone": "9876541233",
+        "street": "13th main",
+        "city": "london",
+        "state": "london",
+        "pinCode": "431545"
+      },
+      "status": "pending",
+      "id": 8
     }
   ]
 }

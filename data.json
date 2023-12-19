@@ -2412,27 +2412,6 @@
       "quantity": 1,
       "user": 2,
       "id": 7
-    },
-    {
-      "title": "Microsoft Surface Laptop 4",
-      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-      "price": 1499,
-      "discountPercentage": 10.23,
-      "rating": 4.43,
-      "stock": 68,
-      "brand": "Microsoft Surface",
-      "category": "laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/8/1.jpg",
-        "https://i.dummyjson.com/data/products/8/2.jpg",
-        "https://i.dummyjson.com/data/products/8/3.jpg",
-        "https://i.dummyjson.com/data/products/8/4.jpg",
-        "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": 1,
-      "id": 8
     }
   ],
   "orders": [
@@ -2947,6 +2926,89 @@
       },
       "status": "pending",
       "id": 8
+    },
+    {
+      "items": [
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 8
+        },
+        {
+          "title": "Huawei P30",
+          "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+          "price": 499,
+          "discountPercentage": 10.58,
+          "rating": 4.09,
+          "stock": 32,
+          "brand": "Huawei",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/5/1.jpg",
+            "https://i.dummyjson.com/data/products/5/2.jpg",
+            "https://i.dummyjson.com/data/products/5/3.jpg"
+          ],
+          "quantity": 5,
+          "user": 1,
+          "id": 9
+        }
+      ],
+      "totalAmount": 3994,
+      "totalItems": 6,
+      "user": {
+        "email": "Jack@gmail.com",
+        "password": "Pass@123",
+        "addresses": [
+          {
+            "name": "Jack sparrow Captain",
+            "email": "Jack@gmail.com",
+            "phone": "9876541233",
+            "street": "13th main",
+            "city": "london",
+            "state": "london",
+            "pinCode": "431545"
+          },
+          {
+            "name": "Jack sparrow",
+            "email": "Jack@gmail.com",
+            "phone": "9876541233",
+            "street": "12th cross",
+            "city": "london",
+            "state": "united",
+            "pinCode": "7812453"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Jack sparrow Captain",
+        "email": "Jack@gmail.com",
+        "phone": "9876541233",
+        "street": "13th main",
+        "city": "london",
+        "state": "london",
+        "pinCode": "431545"
+      },
+      "status": "pending",
+      "id": 9
     }
   ]
 }

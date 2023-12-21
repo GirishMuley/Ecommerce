@@ -2440,6 +2440,26 @@
       "quantity": 1,
       "user": 2,
       "id": 7
+    },
+    {
+      "title": "iPhone X",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/2/1.jpg",
+        "https://i.dummyjson.com/data/products/2/2.jpg",
+        "https://i.dummyjson.com/data/products/2/3.jpg",
+        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 4,
+      "id": 8
     }
   ],
   "orders": [
@@ -2503,7 +2523,7 @@
         "state": "maharashtra",
         "pinCode": "431203"
       },
-      "status": "pending",
+      "status": "dispatched",
       "id": 1
     },
     {
@@ -2567,7 +2587,7 @@
         "state": "maharashtra",
         "pinCode": "431203"
       },
-      "status": "pending",
+      "status": "delivered",
       "id": 2
     },
     {
@@ -2651,7 +2671,7 @@
         "state": "maharashtra",
         "pinCode": "431203"
       },
-      "status": "pending",
+      "status": "cancelled",
       "id": 3
     },
     {
@@ -3037,6 +3057,156 @@
       },
       "status": "pending",
       "id": 9
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 9
+        }
+      ],
+      "totalAmount": 738,
+      "totalItems": 1,
+      "user": {
+        "email": "Jack@gmail.com",
+        "password": "Pass@123",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Jack sparrow Captain",
+            "email": "Jack@gmail.com",
+            "phone": "9876541233",
+            "street": "13th main",
+            "city": "london",
+            "state": "london",
+            "pinCode": "431545"
+          },
+          {
+            "name": "Jack sparrow",
+            "email": "Jack@gmail.com",
+            "phone": "9876541233",
+            "street": "12th cross",
+            "city": "london",
+            "state": "united",
+            "pinCode": "7812453"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Jack sparrow",
+        "email": "Jack@gmail.com",
+        "phone": "9876541233",
+        "street": "12th cross",
+        "city": "london",
+        "state": "united",
+        "pinCode": "7812453"
+      },
+      "status": "pending",
+      "id": 10
+    },
+    {
+      "items": [
+        {
+          "title": "Fog Scent Xpressio Perfume",
+          "description": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
+          "price": 13,
+          "discountPercentage": 8.14,
+          "rating": 4.59,
+          "stock": 61,
+          "brand": "Fog Scent Xpressio",
+          "category": "fragrances",
+          "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
+          "images": [
+            "https://i.dummyjson.com/data/products/13/1.jpg",
+            "https://i.dummyjson.com/data/products/13/2.png",
+            "https://i.dummyjson.com/data/products/13/3.jpg",
+            "https://i.dummyjson.com/data/products/13/4.jpg",
+            "https://i.dummyjson.com/data/products/13/thumbnail.webp"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 9
+        },
+        {
+          "title": "Money Heist Printed Summer T Shirts",
+          "description": "Fabric Jercy, Size: M & L Wear Stylish Dual Stiched",
+          "price": 66,
+          "discountPercentage": 15.97,
+          "rating": 4.9,
+          "stock": 122,
+          "brand": "The Warehouse",
+          "category": "mens-shirts",
+          "thumbnail": "https://i.dummyjson.com/data/products/55/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/55/1.jpg",
+            "https://i.dummyjson.com/data/products/55/2.webp",
+            "https://i.dummyjson.com/data/products/55/3.jpg",
+            "https://i.dummyjson.com/data/products/55/4.jpg",
+            "https://i.dummyjson.com/data/products/55/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 10
+        }
+      ],
+      "totalAmount": 67,
+      "totalItems": 2,
+      "user": {
+        "email": "Jack@gmail.com",
+        "password": "Pass@123",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Jack sparrow Captain",
+            "email": "Jack@gmail.com",
+            "phone": "9876541233",
+            "street": "13th main",
+            "city": "london",
+            "state": "london",
+            "pinCode": "431545"
+          },
+          {
+            "name": "Jack sparrow",
+            "email": "Jack@gmail.com",
+            "phone": "9876541233",
+            "street": "12th cross",
+            "city": "london",
+            "state": "united",
+            "pinCode": "7812453"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Jack sparrow",
+        "email": "Jack@gmail.com",
+        "phone": "9876541233",
+        "street": "12th cross",
+        "city": "london",
+        "state": "united",
+        "pinCode": "7812453"
+      },
+      "status": "pending",
+      "id": 11
     }
   ]
 }

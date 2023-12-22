@@ -1,13 +1,14 @@
 import React from "react";
 import NavBar from "../features/navbar/NavBar";
 import ProductDetails from "../features/product/components/ProductDetails";
+import Footer from "../features/footer/Footer";
 
 function ProductDetailPage() {
   return (
     <div>
-      <NavBar>
-        <ProductDetails></ProductDetails>
-      </NavBar>
+      <NavBar />
+      <ProductDetails />
+      <Footer />
     </div>
   );
 }

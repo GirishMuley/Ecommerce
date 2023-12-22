@@ -18,6 +18,8 @@ import {
 } from "../features/order/orderSlice";
 import { selectUserInfo } from "../features/user/userSlice";
 import { discountedPrice } from "../app/constants";
+import NavBar from "../features/navbar/NavBar";
+import Footer from "../features/footer/Footer";
 
 function Checkout() {
   const dispatch = useDispatch();
@@ -82,6 +84,7 @@ function Checkout() {
 
   return (
     <>
+      <NavBar />
       {!items.length && <Navigate to="/" replace={true}></Navigate>}
       {currentOrder && (
         <Navigate
@@ -500,6 +503,7 @@ function Checkout() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

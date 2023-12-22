@@ -4,9 +4,10 @@ import { RadioGroup } from "@headlessui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProductByIdAsync, selectProductById } from "../ProductSlice";
 import { useParams } from "react-router-dom";
-import { addToCartAsync } from "../../cart/CartSlice";
+import { addToCartAsync, selectItems } from "../../cart/CartSlice";
 import { selectLoggedInUser } from "../../auth/authSlice";
 import { discountedPrice } from "../../../app/constants";
+import { useAlert } from "react-alert";
 
 //TODO: In server data we will add colors,sizes,highlights etc. to each product
 const colors = [
@@ -43,12 +44,25 @@ export default function ProductDetails() {
   const product = useSelector(selectProductById);
   const dispatch = useDispatch();
   const params = useParams();
+  const items = useSelector(selectItems);
+  const alert = useAlert();
 
   const handleCart = (e) => {
     e.preventDefault();
-    const newItem = { ...product, quantity: 1, user: user.id };
-    delete newItem["id"];
-    dispatch(addToCartAsync(newItem));
+    if (items.findIndex((item) => item.productId === product.id) < 0) {
+      const newItem = {
+        ...product,
+        productId: product.id,
+        quantity: 1,
+        user: user.id,
+      };
+      delete newItem["id"];
+      dispatch(addToCartAsync(newItem));
+      //TODO: it will be based on server responce of backend
+      alert.success("Item added to Caet Successfully!!!");
+    } else {
+      alert.show("Already added to your cart!");
+    }
   };
 
   useEffect(() => {
@@ -56,7 +70,7 @@ export default function ProductDetails() {
   }, [dispatch, params.id]);
 
   return (
-    <div className="bg-white">
+    <div className="bg-white mx-6">
       {product && (
         <div className="pt-6">
           <nav aria-label="Breadcrumb">

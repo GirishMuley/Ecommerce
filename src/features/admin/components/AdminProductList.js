@@ -11,7 +11,11 @@ import {
 } from "../../product/ProductSlice";
 
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
-import { StarIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  StarIcon,
+  XMarkIcon,
+  DocumentPlusIcon,
+} from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
   FunnelIcon,
@@ -101,7 +105,7 @@ export default function AdminProductList() {
   }, []);
   return (
     <div>
-      <div className="bg-white">
+      <div className="bg-white mx-6">
         <div>
           {/* Mobile filter dialog */}
           <MobileFilter
@@ -197,6 +201,7 @@ export default function AdminProductList() {
                   <Link to="/admin/product-form">
                     <div>
                       <button className="mx-8 my-2 rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">
+                        <DocumentPlusIcon className="w-5 h-5 mr-1 inline"></DocumentPlusIcon>{" "}
                         Add New Product
                       </button>
                     </div>
@@ -520,11 +525,16 @@ function ProductGrid({ products }) {
                       <p className="text-sm text-red-500">Product Deleted</p>
                     </div>
                   )}
+                  {product.stock <= 0 && (
+                    <div>
+                      <p className="text-sm text-red-400">out of stock</p>
+                    </div>
+                  )}
                 </div>
               </Link>
               <div>
                 <Link to={`/admin/product-form/edit/${product.id}`}>
-                  <button className="my-2 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                  <button className="w-full my-2 rounded-md bg-blue-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
                     Edit Product
                   </button>
                 </Link>

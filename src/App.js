@@ -118,16 +118,31 @@ const router = createBrowserRouter([
   },
   {
     path: "/order-success/:id",
-    element: <OrderSuccessPage></OrderSuccessPage>,
+    element: (
+      <Protected>
+        {" "}
+        <OrderSuccessPage></OrderSuccessPage>
+      </Protected>
+    ),
   },
   {
     path: "/orders",
-    element: <UserOrderPage></UserOrderPage>,
+    element: (
+      <Protected>
+        {" "}
+        <UserOrderPage></UserOrderPage>{" "}
+      </Protected>
+    ),
     //we will add page later right now using componet directly
   },
   {
     path: "/profile",
-    element: <UserProfilePage></UserProfilePage>,
+    element: (
+      <Protected>
+        {" "}
+        <UserProfilePage></UserProfilePage>{" "}
+      </Protected>
+    ),
   },
   {
     path: "/logout",

@@ -99,7 +99,7 @@ function ProductForm() {
             </h2>
 
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-              {selectedProduct.deleted && (
+              {selectedProduct?.deleted && (
                 <h2 className="text-red-500 sm:col-span-6">
                   This Product is Deleted
                 </h2>
@@ -163,7 +163,9 @@ function ProductForm() {
                   >
                     <option value="">--choose brand--</option>
                     {brands.map((brand) => (
-                      <option value={brand.value}>{brand.label}</option>
+                      <option key={brand.value} value={brand.value}>
+                        {brand.label}
+                      </option>
                     ))}
                   </select>
                 </div>
@@ -184,7 +186,9 @@ function ProductForm() {
                   >
                     <option value="">--choose category--</option>
                     {categories.map((category) => (
-                      <option value={category.value}>{category.label}</option>
+                      <option key={category.value} value={category.value}>
+                        {category.label}
+                      </option>
                     ))}
                   </select>
                 </div>
@@ -433,7 +437,7 @@ function ProductForm() {
             Cancel
           </button>
 
-          {selectedProduct && !selectedProduct.deleted && (
+          {selectedProduct && !selectedProduct?.deleted && (
             <button
               onClick={(e) => {
                 e.preventDefault();
@@ -454,7 +458,7 @@ function ProductForm() {
         </div>
       </form>
       <Modal
-        title={`Delete ${selectedProduct.title}`}
+        title={`Delete ${selectedProduct?.title}`}
         message="Are you sure you want to delete this Product ?"
         dangerOption="Delete"
         cancelOption="Cancel"

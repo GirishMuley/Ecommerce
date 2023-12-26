@@ -62,7 +62,7 @@ export function fetchProductsByFilters(filter, sort, pagination) {
   for (let key in sort) {
     queryStirng += `${key}=${sort[key]}&`;
   }
-  console.log(pagination);
+
   for (let key in pagination) {
     queryStirng += `${key}=${pagination[key]}&`;
   }

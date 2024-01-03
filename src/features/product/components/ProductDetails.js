@@ -40,7 +40,7 @@ function classNames(...classes) {
 export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState(colors[0]);
   const [selectedSize, setSelectedSize] = useState(sizes[2]);
-  const user = useSelector(selectLoggedInUser);
+
   const product = useSelector(selectProductById);
   const dispatch = useDispatch();
   const params = useParams();
@@ -53,7 +53,6 @@ export default function ProductDetails() {
       const newItem = {
         product: product.id,
         quantity: 1,
-        user: user.id,
       };
 
       dispatch(addToCartAsync(newItem));

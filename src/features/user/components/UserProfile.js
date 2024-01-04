@@ -58,14 +58,14 @@ export default function UserProfile() {
         <div>
           <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
             <h1 className="text-4xl my-5 font-bold tracking-tight text-gray-900">
-              Name : {userInfo.name ? userInfo.name : "New User"}
+              Name : {userInfo?.name ? userInfo?.name : "New User"}
             </h1>
             <h3 className="text-xl my-5 font-bold tracking-tight text-red-900">
-              Email Address : {userInfo.email}
+              Email Address : {userInfo?.email}
             </h3>
-            {userInfo.role === "admin" && (
+            {userInfo?.role === "admin" && (
               <h3 className="text-xl my-5 font-bold tracking-tight text-red-900">
-                role : {userInfo.role}
+                role : {userInfo?.role}
               </h3>
             )}
           </div>
@@ -276,7 +276,7 @@ export default function UserProfile() {
           <p className=" mt-5 text-sm font-medium text-gray-900 ">
             Your Address :
           </p>
-          {userInfo.addresses.map((address, index) => (
+          {userInfo?.addresses.map((address, index) => (
             <div key={index}>
               {selectedEditIndex === index ? (
                 <form

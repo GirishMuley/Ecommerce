@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { resetPasswordRequestAsync, selectMailSent } from "../authSlice";
 
 export default function ForgotPassword() {
+  const mailSent = useSelector(selectMailSent);
+  const dispatch = useDispatch();
   const {
     register,
     handleSubmit,
@@ -41,7 +45,7 @@ export default function ForgotPassword() {
             className="space-y-6"
             onSubmit={handleSubmit((data) => {
               console.log(data);
-              //TODO: implementaion on backend with email
+              dispatch(resetPasswordRequestAsync(data.email));
             })}
           >
             <div>
@@ -69,6 +73,7 @@ export default function ForgotPassword() {
                 {errors.email && (
                   <p className="text-red-500">{errors.email.message}</p>
                 )}
+                {mailSent && <p className="text-green-500">Mail Sent</p>}
               </div>
             </div>
 

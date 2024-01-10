@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ITEMS_PER_PAGE, discountedPrice } from "../../../app/constants";
+import { ITEMS_PER_PAGE } from "../../../app/constants";
 import { useDispatch, useSelector } from "react-redux";
 import {
   fetchAllOrdersAsync,
@@ -185,7 +185,7 @@ function AdminOrders() {
                             </div>
                             <span>
                               {item.product.title} - #{item.quantity} - $
-                              {discountedPrice(item.product)}
+                              {item.product.discountPrice}
                             </span>
                           </div>
                         ))}
@@ -267,14 +267,14 @@ function AdminOrders() {
 
                       <td className="py-3 px-0 text-center">
                         <div className="flex item-center justify-center">
-                          <div className="w-4 mr-4 transform hover:text-purple-500 hover:scale-110">
+                          {/* <div className="w-4 mr-4 transform hover:text-purple-500 hover:scale-110">
                             <EyeIcon
                               className="w-8 h-8"
                               onClick={(e) => handleShow(order)}
                             >
                               {"  "}
                             </EyeIcon>
-                          </div>
+                          </div> */}
                           <div className="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
                             <PencilIcon
                               className="w-6 h-6"

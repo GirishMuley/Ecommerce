@@ -6,10 +6,7 @@ import { fetchProductByIdAsync, selectProductById } from "../ProductSlice";
 import { useParams } from "react-router-dom";
 import { addToCartAsync, selectItems } from "../../cart/CartSlice";
 import { selectLoggedInUser } from "../../auth/authSlice";
-import { discountedPrice } from "../../../app/constants";
 import { useAlert } from "react-alert";
-
-//TODO: In server data we will add colors,sizes,highlights etc. to each product
 
 const highlights = [
   "Hand cut and sewn locally",
@@ -45,9 +42,7 @@ export default function ProductDetails() {
       if (selectedSize) {
         newItem.size = selectedSize;
       }
-      dispatch(addToCartAsync(newItem));
-      //TODO: it will be based on server responce of backend
-      alert.success("Item added to Caet Successfully!!!");
+      dispatch(addToCartAsync({ item: newItem, alert }));
     } else {
       alert.show("Already added to your cart!");
     }
@@ -150,7 +145,7 @@ export default function ProductDetails() {
                 $ {product.price}
               </p>
               <p className="text-3xl tracking-tight text-gray-900">
-                $ {discountedPrice(product)}
+                $ {product.discountPrice}
               </p>
 
               {/* Reviews */}

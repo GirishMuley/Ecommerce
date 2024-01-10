@@ -66,6 +66,7 @@ export const updateProductAsync = createAsyncThunk(
   "product/updateProduct",
   async (update) => {
     const response = await updateProduct(update);
+
     return response.data;
   }
 );

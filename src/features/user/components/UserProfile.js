@@ -16,8 +16,6 @@ export default function UserProfile() {
   const [selectedEditIndex, setSelectedEditIndex] = useState(-1);
   const [showAddAddressForm, setShowAddAddressForm] = useState(false);
 
-  //TODO: We will add payment section when we work on backend.
-
   const handleEdit = (addressUpdate, index) => {
     const newUser = { ...userInfo, addresses: [...userInfo.addresses] }; //for shallow copy issue
     newUser.addresses.splice(index, 1, addressUpdate);

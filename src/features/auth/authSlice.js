@@ -76,14 +76,11 @@ export const resetPasswordAsync = createAsyncThunk(
   }
 );
 
-export const signOutAsync = createAsyncThunk(
-  "user/signOut",
-  async (loginInfo) => {
-    const response = await signOut(loginInfo);
+export const signOutAsync = createAsyncThunk("user/signOut", async () => {
+  const response = await signOut();
 
-    return response.data;
-  }
-);
+  return response.data;
+});
 
 export const authSlice = createSlice({
   name: "user",

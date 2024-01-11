@@ -22,8 +22,6 @@ export default function ResetPassword() {
     formState: { errors },
   } = useForm();
 
-  console.log(errors);
-
   return (
     <>
       {email && resetToken ? (
@@ -36,7 +34,7 @@ export default function ResetPassword() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="mx-auto h-12 w-auto text-indigo-600"
+                className="mx-auto h-12 w-auto text-indigo-600"
               >
                 <path
                   stroke-linecap="round"
@@ -55,7 +53,6 @@ export default function ResetPassword() {
                 noValidate
                 className="space-y-6"
                 onSubmit={handleSubmit((data) => {
-                  console.log(data);
                   dispatch(
                     resetPasswordAsync({
                       email,

@@ -25,7 +25,7 @@ export default function Login() {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="mx-auto h-12 w-auto text-indigo-600"
+            className="mx-auto h-12 w-auto text-indigo-600"
           >
             <path
               stroke-linecap="round"
@@ -46,7 +46,6 @@ export default function Login() {
               dispatch(
                 loginUserAsync({ email: data.email, password: data.password })
               );
-              console.log(data);
             })}
           >
             <div>

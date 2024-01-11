@@ -35,7 +35,6 @@ export const loginUserAsync = createAsyncThunk(
       const response = await loginUser(loginInfo);
       return response.data;
     } catch (error) {
-      console.log(error);
       return rejectWithValue(error);
     }
   }
@@ -45,9 +44,7 @@ export const checkAuthAsync = createAsyncThunk("user/checkAuth", async () => {
   try {
     const response = await checkAuth();
     return response.data;
-  } catch (error) {
-    console.log(error);
-  }
+  } catch (error) {}
 });
 
 export const resetPasswordRequestAsync = createAsyncThunk(
@@ -57,7 +54,6 @@ export const resetPasswordRequestAsync = createAsyncThunk(
       const response = await resetPasswordRequest(email);
       return response.data;
     } catch (error) {
-      console.log(error);
       return rejectWithValue(error);
     }
   }
@@ -70,7 +66,6 @@ export const resetPasswordAsync = createAsyncThunk(
       const response = await resetPassword(data);
       return response.data;
     } catch (error) {
-      console.log(error);
       return rejectWithValue(error);
     }
   }

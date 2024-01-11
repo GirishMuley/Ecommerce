@@ -27,10 +27,6 @@ function AdminOrders() {
     setEditableOrderId(order.id);
   };
 
-  const handleShow = () => {
-    console.log("handleShow");
-  };
-
   const handleOrderStatus = (e, order) => {
     const updatedOrder = { ...order, status: e.target.value };
     dispatch(updateOrderAsync(updatedOrder));
@@ -66,7 +62,6 @@ function AdminOrders() {
 
   const handleSort = (sortOption) => {
     const sort = { _sort: sortOption.sort, _order: sortOption.order };
-    console.log({ sort });
     setSort(sort);
   };
 

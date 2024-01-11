@@ -13,8 +13,6 @@ export default function ForgotPassword() {
     formState: { errors },
   } = useForm();
 
-  console.log(errors);
-
   return (
     <div>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -25,7 +23,7 @@ export default function ForgotPassword() {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="mx-auto h-12 w-auto text-indigo-600"
+            className="mx-auto h-12 w-auto text-indigo-600"
           >
             <path
               stroke-linecap="round"
@@ -44,7 +42,6 @@ export default function ForgotPassword() {
             noValidate
             className="space-y-6"
             onSubmit={handleSubmit((data) => {
-              console.log(data);
               dispatch(resetPasswordRequestAsync(data.email));
             })}
           >

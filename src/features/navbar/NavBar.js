@@ -97,10 +97,10 @@ function NavBar({ children }) {
                                   y2="32.094"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop offset=".041" stop-color="#FFF300" />
-                                  <stop offset=".273" stop-color="#FFF300" />
-                                  <stop offset=".502" stop-color="#FFE500" />
-                                  <stop offset=".813" stop-color="#F2A930" />
+                                  <stop offset=".041" stopColor="#FFF300" />
+                                  <stop offset=".273" stopColor="#FFF300" />
+                                  <stop offset=".502" stopColor="#FFE500" />
+                                  <stop offset=".813" stopColor="#F2A930" />
                                 </linearGradient>
                                 <linearGradient
                                   id="b"
@@ -110,10 +110,10 @@ function NavBar({ children }) {
                                   y2="31.263"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop offset=".187" stop-color="#F2A930" />
-                                  <stop offset=".498" stop-color="#FFE500" />
-                                  <stop offset=".727" stop-color="#FFF300" />
-                                  <stop offset=".959" stop-color="#FFF300" />
+                                  <stop offset=".187" stopColor="#F2A930" />
+                                  <stop offset=".498" stopColor="#FFE500" />
+                                  <stop offset=".727" stopColor="#FFF300" />
+                                  <stop offset=".959" stopColor="#FFF300" />
                                 </linearGradient>
                                 <linearGradient
                                   id="c"
@@ -123,10 +123,10 @@ function NavBar({ children }) {
                                   y2="36.91"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop offset=".187" stop-color="#F2A930" />
-                                  <stop offset=".498" stop-color="#FFE500" />
-                                  <stop offset=".727" stop-color="#FFF300" />
-                                  <stop offset=".959" stop-color="#FFF300" />
+                                  <stop offset=".187" stopColor="#F2A930" />
+                                  <stop offset=".498" stopColor="#FFE500" />
+                                  <stop offset=".727" stopColor="#FFF300" />
+                                  <stop offset=".959" stopColor="#FFF300" />
                                 </linearGradient>
                                 <linearGradient
                                   id="d"
@@ -136,10 +136,10 @@ function NavBar({ children }) {
                                   y2="27.514"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop offset=".041" stop-color="#FFF300" />
-                                  <stop offset=".273" stop-color="#FFF300" />
-                                  <stop offset=".502" stop-color="#FFE500" />
-                                  <stop offset=".813" stop-color="#F2A930" />
+                                  <stop offset=".041" stopColor="#FFF300" />
+                                  <stop offset=".273" stopColor="#FFF300" />
+                                  <stop offset=".502" stopColor="#FFE500" />
+                                  <stop offset=".813" stopColor="#F2A930" />
                                 </linearGradient>
                               </defs>
                             </svg>
@@ -271,7 +271,7 @@ function NavBar({ children }) {
                             )}
                             aria-current={item.current ? "page" : undefined}
                           >
-                            {item.name}
+                            <Link to={item.link}> {item.name}</Link>
                           </Disclosure.Button>
                         ) : null
                       )}

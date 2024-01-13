@@ -1,3 +1,22 @@
+# Ecommerce
+
+### Objective
+Fully functional e-commerce web app with admin panel, redux toolkit, payment gateway and node email.
+
+### Tech stack
+MERN stack
+
+### Technical features
+1. Redux Toolkit with Async thunk
+2. Authentication via Passport JS
+3. REST API Auth via Passport JWT
+4. Payments via Stripe Gateway
+5. Email via Nodemailer(Gmail)
+6. Mongoose Models/Populate
+7. Mode-View-Controller on backend
+
+### Video
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.

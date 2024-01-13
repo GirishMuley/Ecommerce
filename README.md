@@ -17,6 +17,10 @@ MERN stack
 
 ### Video
 
+
+https://github.com/GirishMuley/Ecommerce/assets/77239125/cc8cd04c-6912-4b0e-acfa-6ef272cde8fb
+
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
